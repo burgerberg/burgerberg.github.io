@@ -1,0 +1,9 @@
+<h2>Comentários</h2>
+
+<section *ngFor="let comment of comments">
+  <div>
+    {{ comment.author.username }} - <time>{{ comment.timestamp }}</time>
+  </div>
+
+  <div [innerText]="comment.content"></div>
+</section>
